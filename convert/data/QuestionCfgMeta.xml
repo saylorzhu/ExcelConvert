@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1">
+	<macro name="MAX_STRING_LENGTH" value="1024"  desc="最大字符长度"/>
+	
+	<struct name="TQuestionCfg" version="1" sortkey="ID">
+		<entry name="ID"	type="int" 		cname="ID"	desc="键值" />
+        <entry name="Question"	type="string" 	size="MAX_STRING_LENGTH"	cname="问题"	desc="问题" />
+		<entry name="Answer"	type="string"	size="MAX_STRING_LENGTH" 	cname="答案"	desc="答案" />
+		<entry name="QuestionIOS"	type="string" 	size="MAX_STRING_LENGTH"	cname="问题IOS"	desc="问题IOS" />
+		<entry name="AnswerIOS"	type="string"	size="MAX_STRING_LENGTH" 	cname="答案IOS"	desc="答案IOS" />
+		<entry name="Type"		type="int"	cname="类型"	desc="类型" />
+	</struct>
+</metalib>

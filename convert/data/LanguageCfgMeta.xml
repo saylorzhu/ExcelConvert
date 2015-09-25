@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1">
+	<macro name="MAX_LANGUAGECFG_KEY_LENGTH" value="128" desc="最大键值长度"/>
+	<macro name="MAX_LANGUAGECFG_CONTENT_LENGTH" value="1024" desc="最大内容长度"/>
+	<struct name="TLanguageCfg" version="1" sortkey="Key">
+        <entry name="Key"		type="string"	cname="key"			size="MAX_LANGUAGECFG_KEY_LENGTH"		desc="键值" />
+        <entry name="Content"	type="string"	cname="content"		size="MAX_LANGUAGECFG_CONTENT_LENGTH"	desc="内容" />
+        <entry name="Attitude"	type="int"		cname="attitude"	desc="定制风格" />
+	</struct>
+</metalib>

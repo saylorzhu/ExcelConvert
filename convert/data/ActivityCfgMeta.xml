@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1" >
+	
+    <macro name="MAX_PRECOND_COUNT"                         value="2"     desc="最多参与条件个数"/>   
+    <macro name="MAX_FINISH_COND_COUNT"                     value="5"     desc="最多完成条件个数"/>   
+    <macro name="MAX_ACTCFG_PRIZE_COUNT"                    value="10"     desc="最多奖励个数"/>   
+    <macro name="MAX_ACTIVITY_PRIZE_MAIL_TITLE_LEN"         value="40"    desc="奖励邮件标题长度"/>
+    <macro name="MAX_ACTIVITY_PRIZE_MAIL_CONTENT_LEN"       value="1024"  desc="奖励邮件内容长度"/>
+    <macro name="MAX_ACTIVITY_ENTRY_NAME_LEN"               value="40"    desc="名称长度"/>
+    <macro name="MAX_ACTIVITY_ENTRY_DESC_LEN"               value="650"   desc="描述长度"/>
+
+
+    <struct name="ResActPreCondItem" version="1">
+        <entry name="PreCondType"               type="int"      	        cname="类型"/>
+        <entry name="Value"        	            type="int"      	        cname="值"/>
+    </struct>
+
+    <struct name="ResActFinishCondItem" version="1">
+        <entry name="CondType"        	        type="int"      	        cname="类型"/>
+        <entry name="CondID"        	        type="int"      	        cname="ID"/>
+        <entry name="ExpectNum"       	        type="int"      	        cname="值"/>
+    </struct>
+    
+    <struct name="TActivityCfg" version="1" sortkey="ID">
+        <entry name="ID"                      type="int"                  cname="活动ID"/>
+        <entry name="Sort"                    type="int"                  cname="排序"/>
+        <entry name="Name"                    type="string"   	          cname="活动名称"                 size="MAX_ACTIVITY_ENTRY_NAME_LEN"/>
+        <entry name="Desc"       	          type="string"      	      cname="活动描述"                 size="MAX_ACTIVITY_ENTRY_DESC_LEN"/>
+        <entry name="Type"                    type="int"                  cname="活动类型"/>
+		<entry name="Importance"              type="int"                  cname="活动优先级"/>
+		<entry name="Platform"                type="int"                  cname="手机系统"/>
+        <entry name="Tag"       	          type="char"      	  	      cname="活动标签"/>
+        <entry name="Entry"                   type="char" 	              cname="活动跳转"/> 
+        <entry name="Icon"                    type="string"   	          cname="活动图标"                 size="MAX_ACTIVITY_ENTRY_NAME_LEN"/>
+        <entry name="BackgroundPic"           type="string"   	          cname="活动背景图"               size="MAX_ACTIVITY_ENTRY_NAME_LEN"/>
+        <entry name="DataSaveIndex"           type="int"                  cname="数据存储下标"/>
+		<entry name="WillShowBeforeBegin"     type="int"                  cname="开始后显示"/>
+        <entry name="BeginTime"               type="string" 	          cname="活动开始时间"             size="MAX_ACTIVITY_PRIZE_MAIL_TITLE_LEN" />
+        <entry name="EndTime"                 type="string" 	          cname="活动结束时间"             size="MAX_ACTIVITY_PRIZE_MAIL_TITLE_LEN" />
+        <entry name="DataClearMode"           type="int"                  cname="活动数据清理方式"/>
+        <entry name="NeedDataUpdateNotify"    type="int"                  cname="数据变化通知"/>
+        <entry name="PreCondCount"            type="uchar"     		      cname="参与条件数量"/>
+     	<entry name="ActPreCond"      	      type="ResActPreCondItem"    count="MAX_PRECOND_COUNT"        cname="[参与条件]"       refer="PreCondCount"/>    
+        <entry name="FinishCondCount"         type="uchar"     		      cname="完成条件数量"/>
+     	<entry name="ActFinishCond"           type="ResActFinishCondItem" count="MAX_FINISH_COND_COUNT"    cname="[完成条件]"       refer="FinishCondCount"/>    
+        <entry name="AutoSendPrize"           type="uchar"                cname="是否自动发奖"/>
+        <entry name="AutoSendPrizeNotify"     type="uchar"                cname="是否需要发奖通知"/>
+        <entry name="PrizeMailTitle"          type="string"   	          cname="奖励邮件标题"             size="MAX_ACTIVITY_PRIZE_MAIL_TITLE_LEN"/>
+        <entry name="PrizeMailContent"        type="string"      	      cname="奖励邮件内容"             size="MAX_ACTIVITY_PRIZE_MAIL_CONTENT_LEN"/>
+        <entry name="SendPrizeMode"           type="uchar"                cname="发奖方式"/>
+        <entry name="PrizeCount"      	      type="short"      	      cname="礼包数量" />
+        <entry name="PrizeIDArray"            type="short"                count="MAX_ACTCFG_PRIZE_COUNT"   cname="[礼包]"           refer="PrizeCount"/>                  	
+    </struct>
+</metalib>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1">
+	<macro name="MAX_DISCOUNT_INFO_LENGTH" value="64" desc="最大物品描述长度"/>
+	<macro name="MAX_SPRITE_LENGTH" value="128" desc="最大图片名字长度"/>
+	<struct name="TExchangeGoldCfg" version="1" sortkey="ID">
+        <entry name="ID"			type="int"		cname="id"				desc="键值" />
+        <entry name="Gold"			type="int"		cname="gold"			desc="金币" />
+        <entry name="Diamond"		type="int"		cname="diamond"			desc="钻石" />
+		<entry name="Scene"		    type="int"		cname="scene"			desc="场景" />
+        <entry name="SpriteName"	type="string"	cname="picture name"	size="MAX_SPRITE_LENGTH"	desc="展示ID，用于展示兑换icon" />
+        <entry name="DiscountInfo"	type="string"	cname="discountInfo"	size="MAX_DISCOUNT_INFO_LENGTH" desc="折扣信息文本" />
+	</struct>
+</metalib>

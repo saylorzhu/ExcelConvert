@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1">
+	<macro name="MAX_ITEMINFOCFG_NAME_LENGTH" value="32"  desc="最大任务名称长度"/>
+	<macro name="MAX_ITEMINFOCFG_DESC_LENGTH" value="128" desc="最大任务描述长度"/>
+	<macro name="MAX_QUESTCFG_CONDITION_COUNT" value="4" desc="最多条件数量"/>
+	<macro name="MAX_QUESTCFG_PRIZE_COUNT" value="5" desc="最多奖励数量"/>
+	
+	<struct name="QuestCondition" version="1">
+		<entry name="Type"	type="int"	cname="类型"	desc="条件类型" />
+		<entry name="ID"	type="int"	cname="条件ID"	desc="条件ID" />
+		<entry name="Value" type="int"	cname="值"		desc="条件值" />
+		<entry name="Desc"	type="string"	cname="描述"	desc="条件描述"			size="MAX_ITEMINFOCFG_DESC_LENGTH"	/>
+	</struct>
+	
+	<struct name="QuestPrize" version="1">
+		<entry name="ID"	type="int"	cname="ID"		desc="道具ID" />
+		<entry name="Count"	type="int"	cname="数量"	desc="道具数量" />
+		<entry name="ValidTime"	type="int"	cname="有效期"	desc="道具有效期" />
+	</struct>
+	
+	<struct name="TQuestCfg" version="1" sortkey="ID">
+        <entry name="ID"			type="int"		cname="任务ID"		desc="任务ID" />
+		<entry name="Name"			type="string"	cname="任务名称"	desc="任务名称"			size="MAX_ITEMINFOCFG_NAME_LENGTH"	/>
+        <entry name="Desc"			type="string"	cname="任务描述"	desc="任务描述"			size="MAX_ITEMINFOCFG_DESC_LENGTH"	/>
+		<entry name="Type"			type="int"	cname="任务类型"	desc="任务类型"	/>
+		<entry name="BeginTime"		type="string"	cname="开始时间"	desc="开始时间"			size="MAX_ITEMINFOCFG_DESC_LENGTH"	/>
+		<entry name="EndTime"		type="string"	cname="结束时间"	desc="结束时间"			size="MAX_ITEMINFOCFG_DESC_LENGTH"	/>
+		<entry name="BeginHour"		type="int"	cname="周期开始时间"	desc="周期开始时间"		/>
+		<entry name="EndHour"		type="int"	cname="周期结束时间"	desc="周期结束时间"		/>
+		<entry name="tag"			type="int"	cname="标签"		desc="标签"		/> 
+		
+        <entry name="ConditionCount"	type="int"	cname="完成条件数量"	desc="完成条件数量" />
+		<entry name="ConditionList"		type="QuestCondition"	count="MAX_QUESTCFG_CONDITION_COUNT"	refer="ConditionCount"	cname="[完成条件]"	desc="条件数组" />
+		<entry name="PrizeDesc"		type="string"	cname="展示名称"	desc="展示名称"		size="MAX_ITEMINFOCFG_NAME_LENGTH"	/>
+		<entry name="PrizeCount"		type="int"	cname="奖励数量"	desc="奖励数量" />
+		<entry name="PrizeList"			type="QuestPrize"		count="MAX_QUESTCFG_PRIZE_COUNT"		refer="PrizeCount"		cname="[奖励]"	desc="奖励数组" />
+		<entry name="Icon"			type="string"	cname="任务图标"	desc="任务图标"			size="MAX_ITEMINFOCFG_NAME_LENGTH"	/>
+		<entry name="Skip"			type="int"		cname="任务跳转"	desc="任务跳转"	/>
+	</struct>
+</metalib>

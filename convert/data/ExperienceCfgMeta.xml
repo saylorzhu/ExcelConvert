@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1">
+	<struct name="TExperienceCfg" version="1" sortkey="ID">
+        <entry name="ID"				type="int"		cname="ID"			desc="键值" />
+        <entry name="NeedExp"			type="int"		cname="最大经验"	desc="升级到该等级需要的经验" />
+        <entry name="AwardCount"		type="int"		cname="奖励数目"	desc="奖励数目" />
+        <entry name="AwardID1"			type="int"		cname="奖励1ID"		desc="奖励1ID" />
+        <entry name="AwardCount1"		type="int"		cname="奖励1数量"	desc="奖励1数量" />
+        <entry name="AwardDuration1"	type="int"		cname="奖励1数量"	desc="奖励1有效期" />
+		<entry name="AwardID2"			type="int"		cname="奖励2ID"		desc="奖励2ID" />
+        <entry name="AwardCount2"		type="int"		cname="奖励2数量"	desc="奖励2ID" />
+		<entry name="AwardDuration2"	type="int"		cname="奖励2数量"	desc="奖励2有效期" />
+		<entry name="AwardID3"			type="int"		cname="奖励3ID"		desc="奖励3ID" />
+        <entry name="AwardCount3"		type="int"		cname="奖励3数量"	desc="奖励3ID" />
+		<entry name="AwardDuration3"	type="int"		cname="奖励3数量"	desc="奖励3有效期" />
+		<entry name="AwardID4"			type="int"		cname="奖励4ID"		desc="奖励4ID" />
+        <entry name="AwardCount4"		type="int"		cname="奖励4数量"	desc="奖励4ID" />
+		<entry name="AwardDuration4"	type="int"		cname="奖励4数量"	desc="奖励4有效期" />
+	</struct>
+</metalib>

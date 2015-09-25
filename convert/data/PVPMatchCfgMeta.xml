@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1">
+	<macro name="MAX_PVPMATCHCFG_NAME_LENGTH" value="256" desc="最大名称长度"/>
+	<macro name="MAX_PVPMATCHCFG_CONDITION_COUNT" value="5" desc="最多条件数量"/>
+	<macro name="MAX_PVPMATCHCFG_PRIZE_COUNT" value="3" desc="最多奖励数量"/>
+	
+	<struct name="MatchCondition" version="1">
+		<entry name="ConditionID"	type="int"	cname="条件ID"	desc="条件ID" />
+		<entry name="ConditionValue"	type="int"	cname="条件值"	desc="条件值" />
+	</struct>
+	
+	<struct name="MatchPrize" version="1">
+		<entry name="PrizeID"	type="int"	cname="道具ID"		desc="道具ID" />
+		<entry name="PrizeNum"	type="int"	cname="道具数量"	desc="道具数量" />
+	</struct>
+	
+	<struct name="TPVPMatchCfg" version="1" sortkey="ID">
+        <entry name="ID"		type="int"		cname="场次ID"		desc="场次ID" />
+		<entry name="SceneId"		type="int"		cname="场景ID"		desc="场景ID" />
+		<entry name="DesktopId"		type="int"		cname="球桌ID"		desc="球桌ID" />
+        <entry name="Name"		type="string"	cname="场次名称"	size="MAX_PVPMATCHCFG_NAME_LENGTH"	desc="场次名称" />
+		<entry name="RoomType"	type="int"		cname="房间类型"		desc="房间类型" />
+        <entry name="EntryFee"	type="int"		cname="入场费"		desc="入场费" />
+		<entry name="EntryMaxGold"	type="int"		cname="入场持有最大金币"		desc="入场持有最大金币" />
+		<entry name="EntryMinLev"	type="int"		cname="入场等级"		desc="入场等级" />
+		<entry name="EntryMinCueLev"	type="int"		cname="入场球杆等级"		desc="入场球杆等级" />
+		<entry name="RewardGold"	type="int"		cname="奖金"		desc="奖金" />
+		<entry name="GameRuler"	type="int"		cname="规则"		desc="规则" />
+		<entry name="RoomLevel"	type="int"		cname="场次等级"		desc="场次等级" />
+		<entry name="ConditionCount"	type="int"	cname="[条件]数量"	desc="[条件]数量" />
+		<entry name="ConditionList"		type="MatchCondition"	count="MAX_PVPMATCHCFG_CONDITION_COUNT"	refer="ConditionCount"	cname="[条件][详细]"	desc="条件数组" />
+		<entry name="PrizeCount"		type="int"	cname="[奖励]数量"	desc="[奖励]数量" />
+		<entry name="PrizeList"			type="MatchPrize"		count="MAX_PVPMATCHCFG_PRIZE_COUNT"		refer="PrizeCount"		cname="[奖励][详细]"	desc="奖励数组" />
+	</struct>
+</metalib>

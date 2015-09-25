@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1">
+	<macro name="CUE_UPGRADE_CFG_STRING_MAX"			value="100"		desc="字符串格式配置项最大长度"/>
+	
+	<struct name="TCueUpgradeCfg" version="1" sortkey="ID">
+        <entry name="ID"           	   type="int"      cname="ID"        desc="序号"  />
+        
+        <entry name="StarStrenth"      type="string"      size="CUE_UPGRADE_CFG_STRING_MAX" cname="升星加力度"  		desc="升星加力度"  		/>
+        <entry name="StarSpin"         type="string"      size="CUE_UPGRADE_CFG_STRING_MAX" cname="升星加旋转"    	desc="升星加旋转"  		/>
+        <entry name="StarAim"          type="string"      size="CUE_UPGRADE_CFG_STRING_MAX" cname="升星加瞄准线"  	desc="升星加瞄准线"  	/>
+        <entry name="StarCharm"          type="string"    size="CUE_UPGRADE_CFG_STRING_MAX" cname="升星加魅力值"  	desc="升星加魅力值"  	/>
+        
+        <entry name="StarProficiency"  type="string"  size="CUE_UPGRADE_CFG_STRING_MAX"      cname="熟练度"  desc="熟练度"  />
+        <entry name="StarCoin"         type="string"  size="CUE_UPGRADE_CFG_STRING_MAX"      cname="升星消耗星币"     desc="升星消耗星币"  />
+        <entry name="StarDiamond"      type="string"  size="CUE_UPGRADE_CFG_STRING_MAX"      cname="升星消耗钻石"  	desc="升星消耗钻石"  />
+        <entry name="StarStoneID"      type="int"     cname="消耗星石ID"  		desc="消耗星石ID"  />
+        <entry name="StarStoneCount"   type="string"  size="CUE_UPGRADE_CFG_STRING_MAX"      cname="消耗星石数量"  	desc="消耗星石数量"  />
+        
+        
+        <entry name="GradeCoin"    		type="int"      cname="进阶消耗星币"  		desc="进阶消耗星币"  />
+        <entry name="GradeDiamond"    	type="int"      cname="进阶消耗钻石"  		desc="进阶消耗钻石"  />
+        <entry name="GradePieceCount"   type="int"      cname="消耗碎片数量"    	desc="消耗碎片数量"  />
+		
+        <entry name="GradeStrenth"      type="int"      cname="进阶加力度"  	desc="升星加力度"  />
+        <entry name="GradeSpin"         type="int"      cname="进阶加旋转"    	desc="升星加旋转"  />
+        <entry name="GradeAim"          type="int"      cname="进阶加瞄准线"  	desc="升星加瞄准线"  />
+        <entry name="GradeCharm"          type="int"      cname="进阶加魅力值"  	desc="进阶加魅力值"  />
+	</struct>
+</metalib>

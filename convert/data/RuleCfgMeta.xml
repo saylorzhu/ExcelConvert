@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1">
+	<macro name="MAX_CONTENT_LEN" value="1024" desc="最大内容长度"/>
+	<macro name="MAX_CONTENT_LEN_M" value="2048" desc="最大内容长度M"/>
+	
+	<struct name="TRuleCfg" version="1" sortkey="ID">
+        <entry name="ID"		type="int"		cname="ID"			desc="键值" />
+        <entry name="RuleName"		type="string"	cname="规则名称"		size="MAX_CONTENT_LEN"		desc="规则名称" />
+        <entry name="RuleTitle"		type="string"	cname="标题切图"		size="MAX_CONTENT_LEN"		desc="标题切图" />
+        <entry name="BaseRule"		type="string"	cname="基本规则"		size="MAX_CONTENT_LEN_M"		desc="基本规则" />
+        <entry name="WinRule"		type="string"	cname="获胜规则"		size="MAX_CONTENT_LEN"		desc="获胜规则" />
+        <entry name="FreeBall"		type="string"	cname="自由球"			size="MAX_CONTENT_LEN"		desc="自由球" />
+        <entry name="ResultRule"	type="string"	cname="金币结算"		size="MAX_CONTENT_LEN"		desc="金币结算" />
+	</struct>
+</metalib>

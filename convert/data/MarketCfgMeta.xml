@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1">
+	<macro name="MAX_DESCRIPTION_LENGTH" value="1024" desc="最大内容长度"/>
+	<macro name="MAX_UNIT_LENGTH" value="32" desc="最大单位长度"/>
+	<macrosgroup name="PAY_TYPE">
+		<macro name="GOLD" 			value="1" 		desc="金币" />
+		<macro name="DIAMOND" 		value="2" 		desc="钻石" />
+	</macrosgroup>
+	
+	<struct name="TMarketCfg" version="1" sortkey="ID">
+        <entry name="ID"		type="int"		cname="ID"			desc="键值" />
+		<entry name="Sort"		type="int"		cname="排序"		desc="排序值" />
+		<entry name="ShowAttri"	type="int"		cname="商城显示属性"		desc="商城显示属性" />
+        <entry name="Tag"		type="string"	cname="标签"		size="MAX_DESCRIPTION_LENGTH"		desc="道具标签" />
+		<entry name="BuyLimitStartTime"	type="string"	cname="限时开始时间"		size="MAX_UNIT_LENGTH"		desc="限时开始时间" />
+		<entry name="BuyLimitEndTime"		type="string"	cname="限时结束时间"		size="MAX_UNIT_LENGTH"		desc="限时结束时间" />
+		<entry name="DiscountStartTime"		type="string"	cname="折扣开始时间"		size="MAX_UNIT_LENGTH"		desc="折扣开始时间" />
+		<entry name="DiscountEndTime"		type="string"	cname="折扣结束时间"		size="MAX_UNIT_LENGTH"		desc="折扣结束时间" />
+		<entry name="CountLimitStartTime"	type="string"	cname="限购开始时间"		size="MAX_UNIT_LENGTH"		desc="限购开始时间" />
+		<entry name="CountLimitEndTime"		type="string"	cname="限购结束时间"		size="MAX_UNIT_LENGTH"		desc="限购结束时间" />
+		<entry name="BuyLimit"		type="int"		cname="限制"		desc="限制" />
+		<entry name="CountLimit"	type="int"		cname="限购数量"	desc="限购数量" />
+		<entry name="DayLimit"		type="int"		cname="每日限购数量"	desc="每日限购数量" />
+		<entry name="Discount"		type="int"		cname="折扣"		desc="折扣" />
+		<entry name="RenewDiscount"		type="int"		cname="再次购买折扣"		desc="再次购买折扣" />		
+		<entry name="Unit"		type="string"	cname="单位"		size="MAX_UNIT_LENGTH"		desc="道具的单位" />
+        <entry name="PriceCount"	type="int"	cname="细节数目"		desc="细节数目" />
+        <entry name="PriceType1"	type="int"	cname="细节1货币类型"	desc="细节1货币类型" bindmacrosgroup="PAY_TYPE" />
+		<entry name="Price1"		type="int"	cname="细节1价格"		desc="细节1价格" />
+		<entry name="Duration1"		type="int"	cname="细节1有效期"		desc="细节1有效期" />
+		<entry name="ReturnType1"	type="int"	cname="细节1返还货币类型"	desc="细节1返还货币类型" />
+		<entry name="ReturnCount1"	type="int"	cname="细节1返还数量"		desc="细节1返还数量" />
+		<entry name="PriceType2"	type="int"	cname="细节2货币类型"	desc="细节2货币类型" bindmacrosgroup="PAY_TYPE" />
+        <entry name="Price2"		type="int"	cname="细节2价格"		desc="细节2价格" />
+		<entry name="Duration2"		type="int"	cname="细节2有效期"		desc="细节2有效期" />
+		<entry name="ReturnType2"	type="int"	cname="细节2返还货币类型"	desc="细节1返还货币类型" />
+		<entry name="ReturnCount2"	type="int"	cname="细节2返还数量"		desc="细节1返还数量" />
+		<entry name="PriceType3"	type="int"	cname="细节3货币类型"	desc="细节3货币类型" bindmacrosgroup="PAY_TYPE" />
+        <entry name="Price3"		type="int"	cname="细节3价格"		desc="细节3价格" />
+		<entry name="Duration3"		type="int"	cname="细节3有效期"		desc="细节3有效期" />
+		<entry name="ReturnType3"	type="int"	cname="细节3返还货币类型"	desc="细节1返还货币类型" />
+		<entry name="ReturnCount3"	type="int"	cname="细节3返还数量"		desc="细节1返还数量" />
+		<entry name="PriceType4"	type="int"	cname="细节4货币类型"	desc="细节4货币类型" bindmacrosgroup="PAY_TYPE" />
+        <entry name="Price4"		type="int"	cname="细节4价格"		desc="细节4价格" />
+		<entry name="Duration4"		type="int"	cname="细节4有效期"		desc="细节4有效期" />
+		<entry name="ReturnType4"	type="int"	cname="细节4返还货币类型"	desc="细节1返还货币类型" />
+		<entry name="ReturnCount4"	type="int"	cname="细节4返还数量"		desc="细节1返还数量" />
+	</struct>
+</metalib>

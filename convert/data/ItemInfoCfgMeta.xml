@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1">
+	<macro name="MAX_ITEMINFOCFG_NAME_LENGTH" value="32"  desc="最大物品名称长度"/>
+	<macro name="MAX_ITEMINFOCFG_DESC_LENGTH" value="128" desc="最大物品描述长度"/>
+	
+	<struct name="TItemInfoCfg" version="1" sortkey="ID">
+        <entry name="ID"			type="int"		cname="ID"			desc="物品ID" />
+        <entry name="Limit"			type="int"		cname="堆叠上限"	desc="1个表示为时效性道具" />
+        <entry name="SynthID"		type="int"		cname="合成ID"		desc="合成ID" />
+		<entry name="ChipId"		type="int"		cname="替换道具ID"		desc="对应的碎片ID 球杆用" />
+		<entry name="QualityLv"		type="int"		cname="珍贵等级"		desc="珍贵等级" />
+		<entry name="HighestLv"		type="int"		cname="最高进阶等级"		desc="最高进阶等级" />
+		<entry name="Proficiency"	type="int"		cname="属性1"		desc="属性1" />
+		<entry name="Name"			type="string"	cname="物品名称"	desc="物品名称"			size="MAX_ITEMINFOCFG_NAME_LENGTH"	/>
+        <entry name="Desc"			type="string"	cname="物品描述"	desc="物品描述"			size="MAX_ITEMINFOCFG_DESC_LENGTH"	/>
+        <entry name="Level"			type="string"	cname="备注"	desc="备注"			size="MAX_ITEMINFOCFG_NAME_LENGTH"	/>
+	</struct>
+</metalib>

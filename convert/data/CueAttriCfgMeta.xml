@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1">
+	<struct name="TCueAttriCfg" version="1" sortkey="ID">
+        <entry name="ID"		type="int"		cname="球杆ID"		desc="球杆ID" />
+        <entry name="Force"		type="int"		cname="力度"		desc="力度" />
+        <entry name="Swirl"		type="int"		cname="加塞"		desc="加塞" />
+        <entry name="Aim"		type="int"		cname="瞄准线"		desc="瞄准线" />
+        <entry name="Charm"		type="int"		cname="魅力值"		desc="魅力值" />
+        <entry name="HasEffect"		type="int"		cname="是否有特效"		desc="是否有特效" />
+	</struct>
+</metalib>

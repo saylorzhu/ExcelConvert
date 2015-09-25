@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1">
+	<macro name="MAX_PVPMATCHCFG_NAME_LENGTH" value="256" desc="最大名称长度"/>
+	<macro name="MAX_LotteryID_LENGTH" value="4" desc="最大抽奖数"/>
+	<macro name="MAX_FixReward_LENGTH" value="5" desc="最大固定奖励数"/>
+
+<struct name="FixReward" version="1">
+	<entry name="FixRewardID"	type="int"	cname="ID"		desc="固定奖励ID" />
+	<entry name="FixRewardPara"	type="int"	cname="参数"	desc="固定奖励数量" />
+</struct>
+	
+<struct name="TPackageRewardCfg" version="1" sortkey="ID">
+        <entry name="ID"				type="int"		cname="ID"				desc="ID" />
+		<entry name="RewardEvent"		type="int"		cname="奖励事件"		desc="奖励事件" />
+        <entry name="EventPara"			type="int"		cname="事件参数"		desc="事件参数" />
+		<entry name="RewardCondition"	type="int"		cname="奖励条件"		desc="奖励条件" />
+        <entry name="LotteryQuantity"	type="int"		cname="抽奖数量"		desc="抽奖数量" />
+		<entry name="ShowItemId"		type="int"		cname="展示ID"			desc="展示ID" />
+		<entry name="ShowName"			type="string"	cname="奖励物品名称"	size="MAX_PVPMATCHCFG_NAME_LENGTH"	desc="奖励物品名称" />  	
+		<entry name="LotteryIDList"		type="int"		count="MAX_LotteryID_LENGTH"	refer="LotteryQuantity"	cname="抽奖ID"	desc="抽奖数组" />	
+		<entry name="FixQuantity"		type="int"		cname="固定数量"		desc="固定数量" />
+		<entry name="FixRewardList"		type="FixReward"	count="MAX_FixReward_LENGTH"	refer="FixQuantity"	cname="固定奖励"	desc="固定奖励数组" />
+	</struct>
+</metalib>

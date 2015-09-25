@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1">
+	<macro name="MAX_LANGUAGECFG_CONTENT_LENGTH" value="256" desc="最大内容长度"/>
+	<struct name="TEmotionCfg" version="1" sortkey="ID">
+        <entry name="ID"			type="int"		cname="index"		desc="键值" />
+		<entry name="Sort"			type="int"		cname="sort"		desc="排序" />
+		<entry name="AtlasID"		type="int"		cname="atlasID"		desc="键值" />
+		<entry name="Frames"		type="int"		cname="frames"		desc="键值" />
+		<entry name="SoundPath"		type="string"	cname="soundPath"	size="MAX_LANGUAGECFG_CONTENT_LENGTH"	desc="音效地址" />
+	</struct>
+</metalib>

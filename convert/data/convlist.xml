@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<ConvList ResEncoding="UTF-8" IsAllowLackList="false">
+	<MetalibFile File="" />
+	<EntryMapFilesPath Path="..\meta" />
+	<BinFilesPath Path="..\excel_output" />
+	<ExcelFilesPath Path="..\excel" />
+	<FileHead CreateTime="0" />
+    <KeywordFile File="..\Keywords.xml" />
+    
+	<ResStyleList>
+		<ResStyle Name="客户端" ID="0" />
+	</ResStyleList>
+
+	<ConvTree Name="配置表">
+		<CommNode Name="LanguageCfg">
+			<ResNode Name="C_LanguageCfg"
+				Meta="TLanguageCfg"
+				BinFile="LanguageCfg.bytes"
+				EntryMapFile="LanguageCfgMeta.xml"
+				IncludeSheet="Language"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="LanguageCfg.xls"
+			/>
+		</CommNode>
+		<CommNode Name="LoadingTipsCfg">
+			<ResNode Name="C_LoadingTipsCfg"
+				Meta="TLoadingTipsCfg"
+				BinFile="LoadingTipsCfg.bytes"
+				EntryMapFile="LoadingTipsCfgMeta.xml"
+				IncludeSheet="LoadingTips"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="LanguageCfg.xls"
+			/>
+		</CommNode>
+		<CommNode Name="ChatCfg">
+			<ResNode Name="C_ChatCfg"
+				Meta="TChatCfg"
+				BinFile="ChatCfg.bytes"
+				EntryMapFile="ChatCfgMeta.xml"
+				IncludeSheet="PreMsg"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="ChatCfg.xls"
+			/>
+		</CommNode>
+		<CommNode Name="EmotionCfg">
+			<ResNode Name="C_EmotionCfg"
+				Meta="TEmotionCfg"
+				BinFile="EmotionCfg.bytes"
+				EntryMapFile="EmotionCfgMeta.xml"
+				IncludeSheet="Chat"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="EmotionCfg.xls"
+			/>
+		</CommNode>
+		<CommNode Name="PVPMatchCfg">
+			<ResNode Name="C_PVPMatchCfg"
+				Meta="TPVPMatchCfg"
+				BinFile="PVPMatchCfg.bytes"
+				EntryMapFile="PVPMatchCfgMeta.xml"
+				IncludeSheet="Sheet1"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="PVPMatchCfg.xls"
+			/>
+		</CommNode>
+		<CommNode Name="ExchangeGoldCfg">
+			<ResNode Name="C_ExchangeGoldCfg"
+				Meta="TExchangeGoldCfg"
+				BinFile="ExchangeGoldCfg.bytes"
+				EntryMapFile="ExchangeGoldCfgMeta.xml"
+				IncludeSheet="Sheet"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="ExchangeGoldCfg.xls"
+			/>
+		</CommNode>
+		<CommNode Name="BuyDiamondCfg">
+			<ResNode Name="C_BuyDiamondCfg"
+				Meta="TBuyDiamondCfg"
+				BinFile="BuyDiamondCfg.bytes"
+				EntryMapFile="BuyDiamondCfgMeta.xml"
+				IncludeSheet="Sheet"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="BuyDiamondCfg.xls"
+			/>
+		</CommNode>
+		<CommNode Name="MarketCfg">
+			<ResNode Name="C_MarketCfg"
+				Meta="TMarketCfg"
+				BinFile="MarketCfg.bytes"
+				EntryMapFile="MarketCfgMeta.xml"
+				IncludeSheet="Market"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="MarketCfg.xls"
+			/>
+		</CommNode>
+		<CommNode Name="ItemInfoCfg">
+			<ResNode Name="C_ItemInfoCfg"
+				Meta="TItemInfoCfg"
+				BinFile="ItemInfoCfg.bytes"
+				EntryMapFile="ItemInfoCfgMeta.xml"
+				IncludeSheet="ItemInfo"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="ItemInfoCfg.xls"
+			/>
+		</CommNode>
+		<CommNode Name="ExperienceCfg">
+			<ResNode Name="C_ExperienceCfg"
+				Meta="TExperienceCfg"
+				BinFile="ExperienceCfg.bytes"
+				EntryMapFile="ExperienceCfgMeta.xml"
+				IncludeSheet="Experience"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="ExperienceCfg.xls"
+			/>
+		</CommNode>
+		<CommNode Name="QuestCfg">
+			<ResNode Name="C_QuestCfg"
+				Meta="TQuestCfg"
+				BinFile="QuestCfg.bytes"
+				EntryMapFile="QuestCfgMeta.xml"
+				IncludeSheet="Quest"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="QuestCfg.xls"
+			/>
+		</CommNode>
+		<CommNode Name="RuleCfg">
+			<ResNode Name="C_RuleCfg"
+				Meta="TRuleCfg"
+				BinFile="RuleCfg.bytes"
+				EntryMapFile="RuleCfgMeta.xml"
+				IncludeSheet="Rule"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="RuleCfg.xls"
+			/>
+		</CommNode>
+		<CommNode Name="PackageRewardCfg">
+			<ResNode Name="C_PackageRewardCfg"
+				Meta="TPackageRewardCfg"
+				BinFile="PackageRewardCfg.bytes"
+				EntryMapFile="PackageRewardCfgMeta.xml"
+				IncludeSheet="PackageReward"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="PackageRewardCfg.xls"
+			/>
+		</CommNode>
+		<CommNode Name="OfflineCfg">
+			<ResNode Name="C_OfflineCfg"
+				Meta="TOfflineCfg"
+				BinFile="OfflineCfg.bytes"
+				EntryMapFile="OfflineCfgMeta.xml"
+				IncludeSheet="Offline"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="OfflineCfg.xls"
+			/>
+		</CommNode>
+		<CommNode Name="SynthItemCfg">
+			<ResNode Name="C_SynthItemCfg"
+				Meta="TSynthItemCfg"
+				BinFile="SynthItemCfg.bytes"
+				EntryMapFile="SynthItemCfgMeta.xml"
+				IncludeSheet="Sheet1"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="SynthItemCfg.xls"
+			/>
+		</CommNode>
+		<CommNode Name="CueAttriCfg">
+			<ResNode Name="C_CueAttriCfg"
+				Meta="TCueAttriCfg"
+				BinFile="CueAttriCfg.bytes"
+				EntryMapFile="CueAttriCfgMeta.xml"
+				IncludeSheet="Sheet"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="CueAttriCfg.xls"
+			/>
+		</CommNode>
+		<CommNode Name="QuestionCfg">
+			<ResNode Name="C_QuestionCfg"
+				Meta="TQuestionCfg"
+				BinFile="QuestionCfg.bytes"
+				EntryMapFile="QuestionCfgMeta.xml"
+				IncludeSheet="Question"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="QuestionCfg.xls"
+			/>
+		</CommNode>	
+		<CommNode Name="NumberCfg">
+			<ResNode Name="C_NumberCfg"
+				Meta="TNumberCfg"
+				BinFile="NumberCfg.bytes"
+				EntryMapFile="NumberCfgMeta.xml"
+				IncludeSheet="Number"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="NumberCfg.xls"
+			/>
+		</CommNode>		
+		<CommNode Name="ActivityCfg">
+			<ResNode Name="C_ActivityCfg"
+				Meta="TActivityCfg"
+				BinFile="ActivityCfg.bytes"
+				EntryMapFile="ActivityCfgMeta.xml"
+				IncludeSheet="Activity"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="Activity.xls"
+			/>
+		</CommNode>		
+		<CommNode Name="ActivityLotteryCfg">
+			<ResNode Name="C_ActivityLotteryCfg"
+				Meta="TActivityLotteryCfg"
+				BinFile="ActivityLotteryCfg.bytes"
+				EntryMapFile="ActivityLotteryCfgMeta.xml"
+				IncludeSheet="ActivityLottery"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="Activity.xls"
+			/>
+		</CommNode>
+		<CommNode Name="ActivityPrizeCfg">
+			<ResNode Name="C_ActivityPrizeCfg"
+				Meta="TActivityPrizeCfg"
+				BinFile="ActivityPrizeCfg.bytes"
+				EntryMapFile="ActivityPrizeCfgMeta.xml"
+				IncludeSheet="ActivityPrize"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="Activity.xls"
+			/>
+		</CommNode>	        
+        <CommNode Name="BroadCastCfg">
+			<ResNode Name="C_BroadCastCfg"
+				Meta="TBroadCastCfg"
+				BinFile="BroadCastCfg.bytes"
+				EntryMapFile="BroadCastCfgMeta.xml"
+				IncludeSheet="BroadCastCfg"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="BroadCastCfg.xls"
+			/>
+		</CommNode>
+		<CommNode Name="CueUpgradeCfg">
+			<ResNode Name="C_CueUpgradeCfg"
+				Meta="TCueUpgradeCfg"
+				BinFile="CueUpgradeCfg.bytes"
+				EntryMapFile="CueUpgradeCfgMeta.xml"
+				IncludeSheet="CueUpgradeCfg"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="CueUpgradeCfg.xls"
+			/>
+		</CommNode>
+		<CommNode Name="OutflowCfg">
+			<ResNode Name="C_OutflowCfg"
+				Meta="TOutflowCfg"
+				BinFile="OutflowCfg.bytes"
+				EntryMapFile="OutflowCfgMeta.xml"
+				IncludeSheet="Sheet1"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="OutflowCfg.xls"
+			/>
+		</CommNode>
+		<CommNode Name="DesktopAttriCfg">
+			<ResNode Name="C_DesktopAttriCfg"
+				Meta="TDesktopAttriCfg"
+				BinFile="DesktopAttriCfg.bytes"
+				EntryMapFile="DesktopAttriCfgMeta.xml"
+				IncludeSheet="Sheet"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="DesktopAttriCfg.xls"
+			/>
+		</CommNode>
+		<CommNode Name="ExchangeStarCoinCfg">
+			<ResNode Name="C_ExchangeStarCoinCfg"
+				Meta="TExchangeStarCoinCfg"
+				BinFile="ExchangeStarCoinCfg.bytes"
+				EntryMapFile="ExchangeStarCoinCfgMeta.xml"
+				IncludeSheet="Sheet"
+				BinStyles="1"
+				Sort="Asc"
+				ExcelFile="ExchangeStarCoinCfg.xls"
+			/>
+		</CommNode>
+	</ConvTree>
+</ConvList>

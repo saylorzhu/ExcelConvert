@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1">
+	<macro name="MAX_LENGTH" value="32"  desc="最大物品名称长度"/>
+
+	<struct name="TDesktopAttriCfg" version="1" sortkey="ID">
+        <entry name="ID"		type="int"		cname="ID"		desc="ID" />
+        <entry name="Name"		type="string"	size="MAX_LENGTH"	cname="名称"		desc="名称" />
+        <entry name="Charm"		type="int"		cname="魅力值"		desc="魅力值" />
+	</struct>
+</metalib>

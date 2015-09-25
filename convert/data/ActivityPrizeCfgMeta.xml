@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1" >
+    <macro name="MAX_ACT_PRIZE_NUM"            value="5"     desc="礼包中最大的奖励个数"/>
+    <macro name="MAX_ITEM_SHOW_NAME_LEN"       value="40"    desc="名称长度"/>
+    <macro name="MAX_LEVEL_LEN"                value="10"    desc="等级长度"/>
+
+    <struct name="ActivityPrizeCfgItem" version="1">
+        <entry name="ID"            type="int"      cname="ID"/>
+        <entry name="Name"          type="string"   cname="展示名称"    size="MAX_ITEM_SHOW_NAME_LEN"/>
+        <entry name="Count"         type="int"      cname="数量"/>
+		<entry name="Duration"      type="int"      cname="有效期"/>
+    </struct>
+
+    <struct name="TActivityPrizeCfg" version="1" sortkey="ID"> 
+        <entry name="ID"               type="int"                       cname="礼包ID"/>
+        <entry name="PrizeCount"       type="uchar"                     cname="奖励数量"/>
+        <entry name="PrizeArray"       type="ActivityPrizeCfgItem"      cname="[奖励]"      count="MAX_ACT_PRIZE_NUM"   refer="PrizeCount"/>
+        <entry name="Level"            type="string"                    cname="备注等级"    size="MAX_LEVEL_LEN"/>
+    </struct>
+</metalib>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1" >
+    <struct name="TActivityLotteryCfg" version="1" sortkey="ID"> 
+        <entry name="ID"               type="int"                  cname="ID"/>
+        <entry name="ActivityID"       type="int"                  cname="活动ID"/>
+        <entry name="PrizeID"          type="int"                  cname="礼包ID"/>
+        <entry name="Weight"           type="int"                  cname="权重"/>
+        <entry name="Limit1"           type="int"                  cname="早限量"/>
+        <entry name="Limit2"           type="int"                  cname="中限量"/>
+        <entry name="Limit3"           type="int"                  cname="晚限量"/>
+        <entry name="InsteadID"        type="int"                  cname="替换ID"/>
+    </struct>
+</metalib>

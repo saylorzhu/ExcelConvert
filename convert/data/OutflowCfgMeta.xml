@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1">
+	<macro name="MAX_ITEMINFOCFG_DESC_LENGTH" value="128" desc="最大任务描述长度"/>
+	<macro name="MAX_SYNTHITEMCFG_OUTFLOW_COUNT" value="5" desc="最多流出途径数量"/>
+	
+	<struct name="Outflow" version="1">
+		<entry name="Skip"			type="int"	cname="跳转"	desc="跳转" />
+		<entry name="Desc"			type="string"	cname="描述"	desc="描述"			size="MAX_ITEMINFOCFG_DESC_LENGTH"	/>
+	</struct>
+	
+	<struct name="TOutflowCfg" version="1" sortkey="ID">
+        <entry name="ID"			type="int"		cname="物品ID"		desc="物品ID" />
+        <entry name="OutflowCount"	type="int"		cname="流出途径数量"	desc="流出途径数量" />
+		<entry name="OutflowList"	type="Outflow"	count="MAX_SYNTHITEMCFG_OUTFLOW_COUNT"	refer="OutflowCount"	cname="[流出途径]"	desc="流出途径数组" />
+	</struct>
+</metalib>

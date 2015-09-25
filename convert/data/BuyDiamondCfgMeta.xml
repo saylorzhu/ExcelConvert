@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1">
+	<macro name="MAX_SPRITE_LENGTH" value="128" desc="最大键值长度"/>
+	<struct name="TBuyDiamondCfg" version="1" sortkey="ID">
+        <entry name="ID"		type="int"		cname="id"			desc="键值" />
+        <entry name="Diamond"	type="int"		cname="diamond"		desc="获得钻石" />
+        <entry name="Money"		type="float"	cname="money"		desc="价格" />
+        <entry name="SpriteName"	type="string"	cname="picture name"	size="MAX_SPRITE_LENGTH"	desc="展示iconID" />
+	</struct>
+</metalib>

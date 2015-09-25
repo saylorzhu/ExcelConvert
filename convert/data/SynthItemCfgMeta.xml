@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1">
+	<macro name="MAX_SYNTH_WAY_COUNT" value="4" desc="最多合成方式数量"/>
+	
+	<struct name="SynthWay" version="1">
+		<entry name="MaterialCount"	type="int"	cname="碎片材料数量"	desc="碎片材料数量" />
+		<entry name="Duration"		type="int"	cname="合成物有效期"	desc="合成物有效期" />
+	</struct>
+	
+	<struct name="TSynthItemCfg" version="1" sortkey="ID">
+        <entry name="ID"			type="int"		cname="ID"		desc="合成ID" />
+		<entry name="TargetID"		type="int"		cname="合成物ID"	desc="合成物ID" />
+		<entry name="MaterialID"	type="int"		cname="碎片材料ID"	desc="碎片材料ID" />
+		<entry name="SynthWayCount"	type="int"		cname="合成方式数量"	desc="合成方式数量" />
+		<entry name="SynthWayList"	type="SynthWay"	count="MAX_SYNTH_WAY_COUNT"	refer="SynthWayCount"	cname="[合成]"	desc="合成方式数组" />
+	</struct>
+</metalib>

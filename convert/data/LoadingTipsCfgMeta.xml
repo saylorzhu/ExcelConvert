@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1">
+	<macro name="MAX_LANGUAGECFG_CONTENT_LENGTH" value="1024" desc="最大内容长度"/>
+	<struct name="TLoadingTipsCfg" version="1" sortkey="Index">
+        <entry name="Index"		type="int"		cname="序号"		desc="序号" />
+        <entry name="Tips"		type="string"	cname="提示"		size="MAX_LANGUAGECFG_CONTENT_LENGTH"	desc="提示内容" />
+	</struct>
+</metalib>

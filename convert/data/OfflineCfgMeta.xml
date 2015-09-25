@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1">
+	
+	<struct name="TOfflineCfg" version="1" sortkey="ID">
+        <entry name="ID"			type="int"		cname="ID"			desc="键值" />
+        <entry name="value"			type="int"		cname="value"		desc="值" />
+	</struct>
+</metalib>

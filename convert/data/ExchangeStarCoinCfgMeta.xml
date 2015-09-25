@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="GBK" standalone="yes" ?>
+<metalib tagsetversion="1" name="pocket.tencent.com" version="1">
+	<macro name="MAX_TIME_FORMAT_LENGTH" value="64" desc="时间描述最大长度"/>
+	<struct name="TExchangeStarCoinCfg" version="1" sortkey="ID">
+        <entry name="ID"			type="int"		cname="id"				desc="键值" />
+        <entry name="Ratio"			type="int"		cname="比率"			desc="比率" />
+		<entry name="BeginTime"	type="string"	cname="起始日期"	size="MAX_TIME_FORMAT_LENGTH"	desc="起始日期格式描述" />
+		<entry name="EndTime"	type="string"	cname="终止日期"	size="MAX_TIME_FORMAT_LENGTH"	desc="结束日期格式描述" />
+	</struct>
+</metalib>
