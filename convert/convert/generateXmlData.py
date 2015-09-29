@@ -1,13 +1,14 @@
 __author__ = 'tylerzhu'
 
-from string import Template
-import codecs
 from convert.metaParser import *
+from lxml import etree
 
 
-class CSharpGenerator:
+class XmlDataGenerator:
 
     def generate(self, meta):
+        # 生成xml文件
+        
 
         # 解析Meta文件
         meta_config = MetaConfig(meta)
@@ -51,19 +52,5 @@ class CSharpGenerator:
             refer_structs.append(''.join(temp_struct))
 
         # 模版文件
-        template_file = codecs.open("convert/template/csharp_template.tdl", "r", "utf-8")
-        tmpl = Template(template_file.read())
 
-        # print("********************", meta_config.structs[-1].name)
-        # 模版替换
-        lines = []
-        lines.append(tmpl.substitute(
-            namespace=meta_config.meta["name"],
-            macros="".join(macros),
-            main_struct=main.name,
-            refer_structs="".join(refer_structs),
-            main_structs="".join(main_struct),
 
-        ))
-
-        return ''.join(lines)

@@ -212,7 +212,7 @@ class ConvertList(QTreeWidget):
             # 只有一个资源节点
             resData = self.itemClicked.get_res_data()
             print(resData["EntryMapFile"])
-            from convert.generateCsharpCode import CSharpGenerator
+            from convert.generateCSharpCode import CSharpGenerator
             test = CSharpGenerator()
             test.generate("data/" + resData["EntryMapFile"])
             pass
@@ -228,7 +228,7 @@ class ConvertList(QTreeWidget):
             # 只有一个资源节点
             resData = self.itemClicked.get_res_data()
             # print(resData["EntryMapFile"])
-            from convert.generateCsharpCode import CSharpGenerator
+            from convert.generateCSharpCode import CSharpGenerator
             test = CSharpGenerator()
             code = test.generate("data/" + resData["EntryMapFile"])
 
